@@ -69,7 +69,7 @@ const ProjectsSection = () => {
         name="Sea-Watch"
         nameSub="e.V"
         showLogo={true}
-        logo= "src/assets/android-chrome-512x512-1.png"
+        logo= "./src/assets/android-chrome-512x512-1.png"
         imagePosition="right"
         description={placeholderDesc}
       />
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
       <ProjectCard
         name="MAGGIE'S"
         showLogo={true}
-        logo= "src/assets/maggiesLogo.5119edb80a35.png"
+        logo= "./src/assets/maggiesLogo.5119edb80a35.png"
         imagePosition="left"
         description={placeholderDesc}
       />

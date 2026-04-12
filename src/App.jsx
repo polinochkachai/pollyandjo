@@ -24,12 +24,12 @@ function App() {
           <span className="hero-arrow">→</span>
           <a className="support-btn" href="#projects"><button >SUPPORT</button></a>
         </div>
-      <div className='sea-separator'><img  className='sea-picture' src='src/assets/IMG_8220.JPG'></img>
+      <div className='sea-separator'><img  className='sea-picture' src='./src/assets/IMG_8220.JPG'></img>
       <hr className="divider"></hr>
       </div>
      <ProjectsSection/>
      <WhySection/>
-     <div><img className="why-img" scr="src/assets/photo.png"></img></div>
+     <div><img className="why-img" scr="./src/assets/photo.png"></img></div>
     </>
       
   )
