@@ -4,7 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import "./App.css";
 import './index.css';
-
+import sea from './assets/IMG_8220.JPG';
+import cardboard from './assets/72.png';
 import HeroSection from './components/hero';
 import ProjectCard from './components/projectcard';
 import ProjectsSection from './components/projects';
@@ -20,11 +21,11 @@ function App() {
      <HeroSection />
      
       <div className="hero-cta">
-          <img  className='picture_separator' src='src/assets/72.png'></img>
+          <img  className='picture_separator' src={cardboard}></img>
           <span className="hero-arrow">→</span>
           <a className="support-btn" href="#projects"><button >SUPPORT</button></a>
         </div>
-      <div className='sea-separator'><img  className='sea-picture' src='./src/assets/IMG_8220.JPG'></img>
+      <div className='sea-separator'><img  className='sea-picture' src={sea}></img>
       <hr className="divider"></hr>
       </div>
      <ProjectsSection/>

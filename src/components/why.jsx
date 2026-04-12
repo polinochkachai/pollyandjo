@@ -1,4 +1,5 @@
 import '../index.css'
+import portrait from "../assets/photo.png"
 const WhySection = () => {
   return (
     <section className="why-section">
@@ -7,7 +8,8 @@ const WhySection = () => {
           We got a simple answer here : we just do care. With this we want to raise awareness and support some amazing projects in their good-doing.  Note, we do not keep any money for ourselves, you support the initiatives directly.    
         </p>
         
-        <div className="hero-signature">POLLY & JO</div>
+        <p className="hero-signature">POLLY & JO</p>
+        
     </section>
     
   );

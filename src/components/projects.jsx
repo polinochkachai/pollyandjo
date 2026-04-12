@@ -1,4 +1,6 @@
 import '../index.css'
+import seawatch from '../assets/android-chrome-512x512-1.png'
+import maggies from "../assets/maggiesLogo.5119edb80a35.png"
 export function ProjectCard({
   name,
   nameSub,
@@ -69,7 +71,7 @@ const ProjectsSection = () => {
         name="Sea-Watch"
         nameSub="e.V"
         showLogo={true}
-        logo= "./src/assets/android-chrome-512x512-1.png"
+        logo= {seawatch}
         imagePosition="right"
         description={placeholderDesc}
       />
@@ -77,7 +79,7 @@ const ProjectsSection = () => {
       <ProjectCard
         name="MAGGIE'S"
         showLogo={true}
-        logo= "./src/assets/maggiesLogo.5119edb80a35.png"
+        logo= {maggies}
         imagePosition="left"
         description={placeholderDesc}
       />
