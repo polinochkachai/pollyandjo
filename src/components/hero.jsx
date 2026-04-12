@@ -1,8 +1,9 @@
 
 import '../index.css'
+import heroImg from "../assets/background.png"
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" style={{ backgroundImage: `url(${heroImg})`}}>
       <div className="hero-bg" />
       <div className="hero-bg-overlay" />
 

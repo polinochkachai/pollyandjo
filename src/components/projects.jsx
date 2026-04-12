@@ -5,6 +5,8 @@ export function ProjectCard({
   name,
   nameSub,
   showLogo,
+  learnmore,
+  donation_link,
   logo,
   imagePosition,
   description
@@ -45,13 +47,13 @@ export function ProjectCard({
         </div>
 
         <div className="project-actions">
-          <button className="action-link">
+          <a  href={learnmore} className="action-link">
             <span className="action-arrow">→</span> LEARN MORE
-          </button>
+          </a>
 
-          <button className="action-link">
+          <a href={donation_link} className="action-link">
             <span className="action-arrow">→</span> DONATE
-          </button>
+          </a>
         </div>
 
       </div>
@@ -62,18 +64,19 @@ export function ProjectCard({
 const ProjectsSection = () => {
   const placeholderDesc =
     "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.";
-
+  const seawatchtext = "";
+  const maggiestext = "";
   return (
-    <section className="projects-section" id="projects">
-      <h2 className="section-title">THE PROJECTS WE SUPPORT</h2>
+    <section className="projects-section" >
+      <hr className="divider"></hr>
+      <h2 className="section-title" id="projects">THE PROJECTS WE SUPPORT</h2>
 
       <ProjectCard
-        name="Sea-Watch"
-        nameSub="e.V"
+        name="Sea-Watch e.V"
         showLogo={true}
         logo= {seawatch}
         imagePosition="right"
-        description={placeholderDesc}
+        description={seawatchtext}
       />
 
       <ProjectCard
@@ -81,7 +84,7 @@ const ProjectsSection = () => {
         showLogo={true}
         logo= {maggies}
         imagePosition="left"
-        description={placeholderDesc}
+        description={maggiestext}
       />
 
       <ProjectCard

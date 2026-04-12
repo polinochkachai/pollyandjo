@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -10,27 +11,28 @@ import HeroSection from './components/hero';
 import ProjectCard from './components/projectcard';
 import ProjectsSection from './components/projects';
 import WhySection from './components/why';
-
+import Footer from './components/footer';
+import Header from './components/header';
 function App() {
 
 
   return (
     <>
       
-     
+     <Header/>
      <HeroSection />
      
       <div className="hero-cta">
           <img  className='picture_separator' src={cardboard}></img>
           <span className="hero-arrow">→</span>
-          <a className="support-btn" href="#projects"><button >SUPPORT</button></a>
+          <a className="support-btn" href="#projects">SUPPORT</a>
         </div>
       <div className='sea-separator'><img  className='sea-picture' src={sea}></img>
-      <hr className="divider"></hr>
       </div>
      <ProjectsSection/>
      <WhySection/>
      <div><img className="why-img" scr="./src/assets/photo.png"></img></div>
+     <Footer/>
     </>
       
   )

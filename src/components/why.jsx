@@ -8,8 +8,8 @@ const WhySection = () => {
           We got a simple answer here : we just do care. With this we want to raise awareness and support some amazing projects in their good-doing.  Note, we do not keep any money for ourselves, you support the initiatives directly.    
         </p>
         
-        <p className="hero-signature">POLLY & JO</p>
-        
+        <p className="why-signature">POLLY & JO</p>
+        <img className='portrait' src={portrait}></img>
     </section>
     
   );
