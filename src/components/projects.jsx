@@ -1,6 +1,7 @@
 import '../index.css'
 import seawatch from '../assets/android-chrome-512x512-1.png'
 import maggies from "../assets/maggiesLogo.5119edb80a35.png"
+import marine from "../assets/MCS_Logo_TwoTone_Inkx2.png"
 export function ProjectCard({
   name,
   nameSub,
@@ -62,10 +63,10 @@ export function ProjectCard({
 }
 
 const ProjectsSection = () => {
-  const placeholderDesc =
-    "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.";
+  
   const seawatchtext = "";
-  const maggiestext = "";
+  const maggiestext = "This project might be known by many of you, bcause of the beautiful buildings they commision for people with cancer and their families. Maggie’s Centres are warm and welcoming places built alongside NHS hospitals that provide the support that people with cancer and their family and friends need ";
+  const marineconservation= "The ocean biome is the largest on Earth, covering approximately 139 million square miles or over 70% of the planet’s surface. Ocean and marine wildlife is one of the reasons we travelled to Scotland. And we most certainly want to help keep the ocean as beautiful as it is."
   return (
     <section className="projects-section" >
       <hr className="divider"></hr>
@@ -76,6 +77,8 @@ const ProjectsSection = () => {
         showLogo={true}
         logo= {seawatch}
         imagePosition="right"
+        learnmore="https://sea-watch.org/en/"
+        donation_link=""
         description={seawatchtext}
       />
 
@@ -84,14 +87,19 @@ const ProjectsSection = () => {
         showLogo={true}
         logo= {maggies}
         imagePosition="left"
+        learnmore="https://www.maggies.org/"
+        donation_link="https://www.justgiving.com/page/pollyandjo-maggies?utm_medium=FR&utm_source=CL"
         description={maggiestext}
       />
 
       <ProjectCard
-        name="Sea Watch"
-        showLogo={false}
+        name="Marine Conservation Society"
+        showLogo={true}
+        logo={marine}
         imagePosition="left"
-        description={placeholderDesc}
+        learnmore="https://www.mcsuk.org/"
+        donation_link="https://www.justgiving.com/page/pollyandjo-ocean?newPage=true"
+        description={marineconservation}
       />
       <hr className="divider"></hr>
     </section>
