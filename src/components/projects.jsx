@@ -2,7 +2,7 @@ import '../index.css'
 import seawatch from '../assets/android-chrome-512x512-1.png'
 import maggies from "../assets/maggiesLogo.5119edb80a35.png"
 import marine from "../assets/MCS_Logo_TwoTone_Inkx2.png"
-import eleelnaelak from "../assets/logo.webp"
+import elna from "../assets/elna.png"
 export function ProjectCard({
   name,
   nameSub,
@@ -106,7 +106,7 @@ const ProjectsSection = () => {
       <ProjectCard
         name="Ele Elna Elak"
         showLogo={true}
-        logo={eleelnaelak}
+        logo={elna}
         imagePosition="left"
         learnmore="https://eleelnaelak.com/#about"
         donation_link="https://eleelnaelak.com/#donate"
