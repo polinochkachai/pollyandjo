@@ -2,6 +2,7 @@ import '../index.css'
 import seawatch from '../assets/android-chrome-512x512-1.png'
 import maggies from "../assets/maggiesLogo.5119edb80a35.png"
 import marine from "../assets/MCS_Logo_TwoTone_Inkx2.png"
+import eleelnaelak from "../assets/logo.webp"
 export function ProjectCard({
   name,
   nameSub,
@@ -64,9 +65,10 @@ export function ProjectCard({
 
 const ProjectsSection = () => {
   
-  const seawatchtext = "";
-  const maggiestext = "This project might be known by many of you, bcause of the beautiful buildings they commision for people with cancer and their families. Maggie’s Centres are warm and welcoming places built alongside NHS hospitals that provide the support that people with cancer and their family and friends need ";
-  const marineconservation= "The ocean biome is the largest on Earth, covering approximately 139 million square miles or over 70% of the planet’s surface. Ocean and marine wildlife is one of the reasons we travelled to Scotland. And we most certainly want to help keep the ocean as beautiful as it is."
+  const seawatchtext = "Sea-Watch vision is a world in which borders, racism, injustice, and inequality are overcome, and all people can live and move freely and safely in a self-determined way. They organise sea rescue operations, document human right violations and much more. We believe, it is essential to support those who fight for basic human rights on the front line and do not just look away. ";
+  const maggiestext = "This project might be known by many of you, because of the beautiful buildings they commision for people with cancer and their families. Maggie’s Centres are warm and welcoming places built alongside NHS hospitals that provide the support that people with cancer and their family and friends need. ";
+  const marineconservation= "The ocean biome is the largest on Earth, covering approximately 139 million square miles or over 70% of the planet’s surface. Ocean and marine wildlife is one of the reasons we are travelling in Scotland. And we most certainly want to help keep the ocean as beautiful as it is."
+  const eleelnaelak= "Ele Elna Elak is providing essential aid to families across Gaza — including clean water, food, and basic hygiene supplies. Unfortunately, we were not able to start a dedicated fundraiser - you can donate directly on the page of the organisation. Contribute to not just rebuilding homes, but hope for thousands . "
   return (
     <section className="projects-section" >
       <hr className="divider"></hr>
@@ -78,7 +80,7 @@ const ProjectsSection = () => {
         logo= {seawatch}
         imagePosition="right"
         learnmore="https://sea-watch.org/en/"
-        donation_link=""
+        donation_link="https://sea-watch.org/spenden/meine-spendenaktion/?cfd=vowha&frb_utm_source=social-share-link#cff"
         description={seawatchtext}
       />
 
@@ -100,6 +102,15 @@ const ProjectsSection = () => {
         learnmore="https://www.mcsuk.org/"
         donation_link="https://www.justgiving.com/page/pollyandjo-ocean?newPage=true"
         description={marineconservation}
+      />
+      <ProjectCard
+        name="Ele Elna Elak"
+        showLogo={true}
+        logo={eleelnaelak}
+        imagePosition="left"
+        learnmore="https://eleelnaelak.com/#about"
+        donation_link="https://eleelnaelak.com/#donate"
+        description={eleelnaelak}
       />
       <hr className="divider"></hr>
     </section>
