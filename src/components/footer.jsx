@@ -32,11 +32,11 @@ const PolicyButton = ({ ButtonName, Content }) => {
     </Popup>
   );
 };
-const InstaIcon= ({name}) => {
+const InstaIcon= ({name, link}) => {
   return ( 
     <section className="instagram">
         <img className='icon' src={icon}></img>
-        <p className='nickname'>{name}</p>
+        <p className='nickname'><a href={link}>{name}</a></p>
     </section>
   );
 };
@@ -46,8 +46,8 @@ const Footer =()=>{
         <section style={{ backgroundImage: `url(${imagefooter})`}} className='footer'>
           
           <div className="left">
-            <InstaIcon name="@cwreality" />
-            <InstaIcon name="@johanneshafer" />
+            <InstaIcon name="@cwreality" link="https://www.instagram.com/cwreality" />
+            <InstaIcon name="@johanneshafer" link="https://www.instagram.com/johanneshafer" />
           </div>
           
           <div className="right">
